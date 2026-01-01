@@ -2,8 +2,6 @@
 
 import { motion } from "framer-motion";
 
-/* ===================== TYPES ===================== */
-
 export interface JourneyItem {
   year: string;
   title: string;
@@ -16,8 +14,6 @@ interface JourneyTimelineProps {
   heading: string;
   items: JourneyItem[];
 }
-
-/* ===================== COMPONENT ===================== */
 
 export default function JourneyTimeline({
   heading,
@@ -53,18 +49,24 @@ export default function JourneyTimeline({
         </h2>
       </motion.div>
 
-      {/* CENTER LINE */}
-      <div className="absolute left-1/2 top-[22rem] h-[calc(100%-22rem)] w-[2px] bg-blue-500/30 z-10" />
+      {/* TIMELINE */}
+      <div className="relative max-w-6xl mx-auto z-20 pt-10 pb-10">
 
-      {/* TIMELINE ITEMS */}
-      <div className="relative max-w-6xl mx-auto z-20">
+        {/* CENTER LINE — corrected (no invalid Tailwind class) */}
+        <div className="absolute left-1/2 top-[72px] bottom-20 w-[2px] bg-blue-500/30 -translate-x-1/2" />
+
         {items.map((item, index) => (
-          <div key={index} className="relative mb-40 min-h-[100px]">
+          <div
+            key={index}
+            className={`relative pt-10 ${
+              index === items.length - 1 ? "mb-0" : "mb-64"
+            }`}
+          >
 
             {/* YEAR */}
             <div
               className={`
-                absolute top-1/2 -translate-y-1/2
+                absolute top-0
                 text-[7rem] font-bold pointer-events-none select-none
                 text-muted-foreground/35
                 dark:text-gray-400/30
@@ -78,8 +80,8 @@ export default function JourneyTimeline({
             {/* DOT */}
             <div
               className="
-                absolute left-1/2 top-1/2
-                -translate-x-1/2 -translate-y-1/2
+                absolute left-1/2 top-20
+                -translate-x-1/2
                 w-4 h-4 bg-blue-500 rounded-full
                 border-4 border-background z-30
               "
@@ -97,20 +99,11 @@ export default function JourneyTimeline({
                   : "mr-auto pr-24 text-right"
               }`}
             >
-              <h3 className="text-2xl font-bold mb-2">
-                {item.title}
-              </h3>
-
+              <h3 className="text-2xl font-bold mb-2">{item.title}</h3>
               <p className="text-blue-500 font-semibold mb-1 uppercase tracking-wide">
                 {item.subtitle}
               </p>
-
-              {/* perfectly aligned paragraph */}
-              <p
-                className={`text-muted-foreground leading-relaxed ${
-                  item.side === "right" ? "text-right" : "text-left"
-                }`}
-              >
+              <p className="text-muted-foreground leading-relaxed">
                 {item.description}
               </p>
             </motion.div>
