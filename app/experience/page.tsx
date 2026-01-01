@@ -29,14 +29,14 @@ const experienceData: JourneyItem[] = [
       "Contributed to accessibility, internationalization, UI refinements, and performance improvements in a distributed open-source team.",
     side: "left",
   },
-  {
-    year: "2025",
-    title: "Open Source Contributor",
-    subtitle: "Activist Org",
-    description:
-      "Contributed improvements to internal tooling, helping ensure smoother workflows and better consistency across development environments.",
-    side: "right",
-  },
+  // {
+  //   year: "2025",
+  //   title: "Open Source Contributor",
+  //   subtitle: "Activist Org",
+  //   description:
+  //     "Contributed improvements to internal tooling, helping ensure smoother workflows and better consistency across development environments.",
+  //   side: "right",
+  // },
 ];
 
 /* ===================== EDUCATION DATA ===================== */
