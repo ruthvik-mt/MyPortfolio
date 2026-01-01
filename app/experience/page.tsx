@@ -7,11 +7,18 @@ import JourneyTimeline, { JourneyItem } from "@/components/JourneyTimeline";
 
 const experienceData: JourneyItem[] = [
   {
+    year: "2026",
+    title: "Software Engineering Intern",
+    subtitle: "TrueByte Innovation LLP",
+    description: "Present",
+    side: "left",
+  },
+  {
     year: "2025",
     title: "Technical Intern (Cybersecurity)",
     subtitle: "Torsecure Cyber LLP",
     description:
-      "Worked on web application security, vulnerability assessments, authentication and authorization flow analysis and network traffic monitoring.",
+      "Worked on web application security, vulnerability assessments, authentication and authorization flow analysis, and network traffic monitoring.",
     side: "right",
   },
   {
@@ -19,7 +26,7 @@ const experienceData: JourneyItem[] = [
     title: "Open Source Contributor",
     subtitle: "Scribe Org",
     description:
-      "Contributed to accessibility, internationalization, UI refinements and performance improvements in a distributed open-source team.",
+      "Contributed to accessibility, internationalization, UI refinements, and performance improvements in a distributed open-source team.",
     side: "left",
   },
   {
@@ -41,7 +48,7 @@ const educationData: JourneyItem[] = [
     subtitle: "Jawahar Navodaya Vidyalaya",
     description:
       "Developed strong academic fundamentals while nurturing personal growth in a disciplined learning environment.",
-    side: "right",
+    side: "left",
   },
   {
     year: "2022",
@@ -49,7 +56,7 @@ const educationData: JourneyItem[] = [
     subtitle: "Jawarhar Navodaya Vidyalaya",
     description:
       "Built a solid foundation in science and problem-solving, developing a strong interest in science.",
-    side: "left",
+    side: "right",
   },
   {
     year: "2026",
@@ -57,7 +64,7 @@ const educationData: JourneyItem[] = [
     subtitle: "Sahyadri College of Engineering and Management",
     description:
       "Specialized in computer science, software development and advanced programming concepts through academics and projects.",
-    side: "right",
+    side: "left",
   },
 ];
 

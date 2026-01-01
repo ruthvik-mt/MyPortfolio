@@ -26,7 +26,7 @@ export default function JourneyTimeline({
   return (
     <section className="relative py-32 overflow-hidden">
 
-      {/* BACKGROUND TEXT — dynamic & tuned for light / dark */}
+      {/* BACKGROUND TEXT */}
       <h2
         className="
           absolute top-10 left-1/2 -translate-x-1/2
@@ -59,7 +59,7 @@ export default function JourneyTimeline({
       {/* TIMELINE ITEMS */}
       <div className="relative max-w-6xl mx-auto z-20">
         {items.map((item, index) => (
-          <div key={index} className="relative mb-40 min-h-[200px]">
+          <div key={index} className="relative mb-40 min-h-[100px]">
 
             {/* YEAR */}
             <div
@@ -93,7 +93,7 @@ export default function JourneyTimeline({
               viewport={{ once: true }}
               className={`relative z-20 w-1/2 px-10 ${
                 item.side === "left"
-                  ? "ml-auto pl-24"
+                  ? "ml-auto pl-24 text-left"
                   : "mr-auto pr-24 text-right"
               }`}
             >
@@ -101,11 +101,16 @@ export default function JourneyTimeline({
                 {item.title}
               </h3>
 
-              <p className="text-blue-500 font-semibold mb-4 uppercase tracking-wide">
+              <p className="text-blue-500 font-semibold mb-1 uppercase tracking-wide">
                 {item.subtitle}
               </p>
 
-              <p className="text-muted-foreground leading-relaxed">
+              {/* perfectly aligned paragraph */}
+              <p
+                className={`text-muted-foreground leading-relaxed ${
+                  item.side === "right" ? "text-right" : "text-left"
+                }`}
+              >
                 {item.description}
               </p>
             </motion.div>
