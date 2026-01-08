@@ -23,12 +23,6 @@ A modern, full-stack personal portfolio website built with Next.js, React and Ty
 - **Email:** Nodemailer
 - **Deployment:** Vercel
 
-## Prerequisites
-
-- Node.js v18+
-- npm or yarn
-- Gmail/SMTP credentials (for contact form)
-
 ## Installation
 
 1. **Clone the repository**
@@ -64,40 +58,6 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 npm run build
 npm start
 ```
-## Project Structure
-
-```
-MyPortfolio/
-├── app/                 # Next.js App Router
-├── components/          # React components
-├── lib/                 # Utility functions
-├── public/              # Static assets
-└── package.json         # Dependencies
-```
-
-## Deployment:
-
-- Frontend Deployment: Vercel, Netlify, or any static hosting that supports Vite.
-- Backend Deployment: Railway, Render, or Heroku.
-
-## Contributing:
-
-1. Fork the repository
-2. Clone the repository:
-   
-```
-git clone https://github.com/ruthvik-mt/Trackifi.git
-````
-```
-cd Trackifi
-```
-```
-git remote add upstream https://github.com/ruthvik-mt/Trackifi.git
-```
-3. Now, if you run ```git remote -v``` you should see two remote repositories named:
-- `origin` (forked repository)
-- `upstream` (MyPortfolio repository)
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository) file for more details.
