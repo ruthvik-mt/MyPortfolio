@@ -13,7 +13,7 @@ A modern, full-stack personal portfolio website built with Next.js, React and Ty
 
 ## Live Demo
 
-🌐 Visit the website: [ruthvik-dev.vercel.app](https://ruthvik-dev.vercel.app)
+🌐 Visit the website: [MyPortfolio](https://ruthvik-dev.vercel.app)
 
 ## Tech Stack
 
