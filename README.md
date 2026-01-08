@@ -1,36 +1,109 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 👨‍💻 MyPortfolio
 
-## Getting Started
+A modern, full-stack personal portfolio website built with Next.js, React and TypeScript featuring interactive animations.
 
-First, run the development server:
+## Features
 
+- **Responsive Design** - Optimized for all devices
+- **Dark/Light Theme** - Seamless theme switching
+- **Contact Form** - Functional email integration with Nodemailer
+- **Smooth Animations** - Powered by Framer Motion
+- **Performance Optimized** - Fast loads with Next.js
+- **TypeScript** - 97.5% type-safe codebase
+
+## Live Demo
+
+🌐 Visit the website: [ruthvik-dev.vercel.app](https://ruthvik-dev.vercel.app)
+
+## Tech Stack
+
+- **Frontend:** Next.js 16, React 19, TypeScript, Tailwind CSS v4
+- **Animations:** Framer Motion
+- **Icons:** Lucide React
+- **Email:** Nodemailer
+- **Deployment:** Vercel
+
+## Prerequisites
+
+- Node.js v18+
+- npm or yarn
+- Gmail/SMTP credentials (for contact form)
+
+## Installation
+
+1. **Clone the repository**
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/ruthvik-mt/MyPortfolio.git
+cd MyPortfolio
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. **Install dependencies**
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. **Setup environment variables**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Create a `.env.local` file:
+```env
+NEXT_PUBLIC_SMTP_SERVICE=gmail
+SMTP_EMAIL=your-email@gmail.com
+SMTP_PASSWORD=your-app-password
+```
 
-## Learn More
+4. **Run development server**
+```bash
+npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Build for Production
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm run build
+npm start
+```
+## Project Structure
 
-## Deploy on Vercel
+```
+MyPortfolio/
+├── app/                 # Next.js App Router
+├── components/          # React components
+├── lib/                 # Utility functions
+├── public/              # Static assets
+└── package.json         # Dependencies
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Deployment:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Frontend Deployment: Vercel, Netlify, or any static hosting that supports Vite.
+- Backend Deployment: Railway, Render, or Heroku.
+
+## Contributing:
+
+1. Fork the repository
+2. Clone the repository:
+   
+```
+git clone https://github.com/ruthvik-mt/Trackifi.git
+````
+```
+cd Trackifi
+```
+```
+git remote add upstream https://github.com/ruthvik-mt/Trackifi.git
+```
+3. Now, if you run ```git remote -v``` you should see two remote repositories named:
+- `origin` (forked repository)
+- `upstream` (MyPortfolio repository)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository) file for more details.
+
+##
+
+<div align="center">
+  <strong>Made with ❤️ using Next.js & React</strong>
+</div>
