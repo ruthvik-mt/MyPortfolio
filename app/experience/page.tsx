@@ -72,7 +72,7 @@ const educationData: JourneyItem[] = [
 
 export default function Experience() {
   return (
-    <div className="min-h-screen bg-background text-foreground transition-colors duration-300">
+    <div className="min-h-screen bg-backgroundm text-foreground transition-colors duration-300">
 
       {/* EXPERIENCE */}
       <JourneyTimeline heading="EXPERIENCE" items={experienceData} />

@@ -47,13 +47,7 @@ export default function Skills() {
 
       {/* BACKGROUND TEXT */}
       <h2
-        className="
-          absolute top-6 left-1/2 -translate-x-1/2
-          text-[9rem] font-bold tracking-widest pointer-events-none
-          text-muted-foreground/25
-          dark:text-gray-500/20
-          select-none
-        "
+        className="absolute top-16 sm:top-12 md:top-8 left-1/2 -translate-x-1/2 text-[4.5rem] sm:text-[6rem] md:text-[9rem] font-bold tracking-widest pointer-events-none text-muted-foreground/30 dark:text-gray-500/20 select-none whitespace-nowrap"
       >
         SKILLS
       </h2>
@@ -66,7 +60,7 @@ export default function Skills() {
           animate={{ opacity: 1, y: 0 }}
           className="text-center mb-16"
         >
-          <h1 className="mt-6 text-5xl md:text-6xl font-bold mb-4">
+          <h1 className="mt-4 sm:mt-10 md:mt-10 text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
             TECH{" "}
             <span className="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
               STACK

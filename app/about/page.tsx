@@ -42,13 +42,7 @@ export default function About() {
       
       {/* BACKGROUND TEXT */}
       <h2
-        className="
-          absolute top-6 left-1/2 -translate-x-1/2
-          text-[9rem] font-bold tracking-widest pointer-events-none
-          text-muted-foreground/25
-          dark:text-gray-500/20
-          select-none
-        "
+        className="absolute top-8 sm:top-14 md:top-6 left-1/2 -translate-x-1/2 text-[4.5rem] sm:text-[6rem] md:text-[9rem] font-bold tracking-widest pointer-events-none text-muted-foreground/30 dark:text-gray-500/20 select-none whitespace-nowrap"
       >
         ABOUT
       </h2>
@@ -59,9 +53,9 @@ export default function About() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-center mb-12 space-y-2"
+          className="text-center mb-12 space-y-2 relative z-10"
         >
-          <h1 className="mt-12 text-5xl md:text-6xl font-bold text-foreground">
+          <h1 className="mt-5 sm:mt-14 md:mt-12 text-4xl sm:text-5xl md:text-6xl font-bold text-foreground">
             ABOUT{" "}
             <span className="inline-block bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
               ME
@@ -91,7 +85,7 @@ export default function About() {
                 alt="Profile"
                 fill
                 priority
-                className="rounded-full object-contain p-1 shadow-2xl relative z-10 translate-x-12 scale-[1.3]"
+                className="rounded-full object-contain p-1 shadow-2xl relative z-10 scale-[1.15] md:translate-x-12 md:scale-[1.3]"
               />
             </div>
           </motion.div>

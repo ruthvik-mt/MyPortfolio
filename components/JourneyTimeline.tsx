@@ -20,17 +20,11 @@ export default function JourneyTimeline({
   items,
 }: JourneyTimelineProps) {
   return (
-    <section className="relative py-32 overflow-hidden">
+    <section className="relative py-28 sm:py-32 overflow-hidden">
 
       {/* BACKGROUND TEXT */}
       <h2
-        className="
-          absolute top-10 left-1/2 -translate-x-1/2
-          text-[9rem] font-bold tracking-widest pointer-events-none
-          text-muted-foreground/25
-          dark:text-gray-500/20
-          select-none
-        "
+        className="absolute top-20 sm:top-10 left-1/2 -translate-x-1/2 text-[4.2rem] sm:text-[9rem] font-bold tracking-widest pointer-events-none text-muted-foreground/20 sm:text-muted-foreground/30 dark:text-gray-500/20 sm:dark:text-gray-500/20 select-none whitespace-nowrap"
       >
         JOURNEY
       </h2>
@@ -41,7 +35,7 @@ export default function JourneyTimeline({
         animate={{ opacity: 1, y: 0 }}
         className="text-center mb-32 relative z-30"
       >
-        <h2 className="text-5xl md:text-6xl font-bold">
+        <h2 className="mt-0 sm:mt-0 text-4xl sm:text-5xl md:text-6xl font-bold">
           MY{" "}
           <span className="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
             {heading}
@@ -52,7 +46,7 @@ export default function JourneyTimeline({
       {/* TIMELINE */}
       <div className="relative max-w-6xl mx-auto z-20 pt-10 pb-10">
 
-        {/* CENTER LINE — corrected (no invalid Tailwind class) */}
+        {/* CENTER LINE */}
         <div className="absolute left-1/2 top-[72px] bottom-20 w-[2px] bg-blue-500/30 -translate-x-1/2" />
 
         {items.map((item, index) => (
@@ -63,15 +57,21 @@ export default function JourneyTimeline({
             }`}
           >
 
-            {/* YEAR */}
+            {/* YEAR (moved slightly up + responsive) */}
             <div
               className={`
-                absolute top-0
-                text-[7rem] font-bold pointer-events-none select-none
-                text-muted-foreground/35
+                absolute top-0 max-md:-top-6
+                text-[4.5rem] md:text-[7rem] font-bold
+                pointer-events-none select-none
+                text-muted-foreground/40
                 dark:text-gray-400/30
                 z-40
-                ${item.side === "left" ? "left-[6%]" : "right-[6%]"}
+                ${
+                  item.side === "left"
+                    ? "md:left-[6%]"
+                    : "md:right-[6%]"
+                }
+                max-md:left-1/2 max-md:-translate-x-1/2
               `}
             >
               {item.year}
@@ -87,17 +87,24 @@ export default function JourneyTimeline({
               "
             />
 
-            {/* CONTENT */}
+            {/* CONTENT (responsive only) */}
             <motion.div
               initial={{ opacity: 0, x: item.side === "left" ? -80 : 80 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
-              className={`relative z-20 w-1/2 px-10 ${
-                item.side === "left"
-                  ? "ml-auto pl-24 text-left"
-                  : "mr-auto pr-24 text-right"
-              }`}
+              className={`
+                relative z-20
+                w-full md:w-1/2
+                px-6 md:px-10
+                max-md:mt-16
+                max-md:text-center
+                ${
+                  item.side === "left"
+                    ? "md:ml-auto md:pl-24 md:text-left"
+                    : "md:mr-auto md:pr-24 md:text-right"
+                }
+              `}
             >
               <h3 className="text-2xl font-bold mb-2">{item.title}</h3>
               <p className="text-blue-500 font-semibold mb-1 uppercase tracking-wide">

@@ -82,7 +82,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
-              className="text-5xl md:text-6xl font-bold"
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight break-words"
             >
               Hi, I&apos;m{" "}
               <span className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
@@ -109,7 +109,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
-              className="text-lg opacity-80 max-w-xl"
+              className=" text-base sm:text-lg opacity-80 max-w-xl leading-relaxed "
             >
               I build secure, scalable full-stack applications and enjoy turning
               complex problems into clean, user-focused solutions.
@@ -119,13 +119,13 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6 }}
-              className="flex flex-wrap gap-4"
+              className="flex flex-wrap gap-12 sm:gap-5"
             >
               <Link href="/projects">
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg font-semibold flex items-center space-x-2 shadow-lg hover:shadow-xl transition-shadow"
+                  className="px-5 py-3 text-sm sm:px-8 sm:py-4 sm:text-base bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg font-semibold flex items-center space-x-2 shadow-lg hover:shadow-xl transition-shadow"
                 >
                   <span>View Projects</span>
                   <ArrowRight className="w-5 h-5" />
@@ -136,7 +136,7 @@ export default function Home() {
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="px-8 py-4 glass rounded-lg font-semibold transition-colors"
+                  className="px-10 py-3 text-sm sm:px-8 sm:py-4 sm:text-base glass rounded-lg font-semibold transition-colors"
                 >
                   Contact Me
                 </motion.button>

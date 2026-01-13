@@ -96,15 +96,7 @@ export default function Projects() {
     <div className="relative min-h-screen py-20 px-4 sm:px-6 lg:px-8 bg-background text-foreground transition-colors duration-300 overflow-hidden">
 
       {/* BACKGROUND TEXT */}
-      <h2
-        className="
-          absolute top-6 left-1/2 -translate-x-1/2
-          text-[9rem] font-bold tracking-widest pointer-events-none
-          text-muted-foreground/25
-          dark:text-gray-500/20
-          select-none
-        "
-      >
+      <h2 className="absolute top-16 sm:top-6 left-1/2 -translate-x-1/2 text-[3.8rem] sm:text-[9rem] font-bold tracking-widest pointer-events-none text-muted-foreground/30 sm:text-muted-foreground/20 dark:text-gray-500/15 sm:dark:text-gray-500/20 select-none whitespace-nowrap">
         PROJECTS
       </h2>
 
@@ -116,7 +108,7 @@ export default function Projects() {
           animate={{ opacity: 1, y: 0 }}
           className="text-center mb-16"
         >
-          <h1 className="mt-6 text-5xl md:text-6xl font-bold mb-4">
+          <h1 className="mt-3 sm:mt-6 text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
             MY{" "}
             <span className="inline-block bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
               WORK
