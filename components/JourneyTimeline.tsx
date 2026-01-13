@@ -24,7 +24,7 @@ export default function JourneyTimeline({
 
       {/* BACKGROUND TEXT */}
       <h2
-        className="absolute top-20 sm:top-10 left-1/2 -translate-x-1/2 text-[4.2rem] sm:text-[9rem] font-bold tracking-widest pointer-events-none text-muted-foreground/20 sm:text-muted-foreground/30 dark:text-gray-500/20 sm:dark:text-gray-500/20 select-none whitespace-nowrap"
+        className="absolute top-14 sm:top-6 left-1/2 -translate-x-1/2 text-[4.2rem] sm:text-[9rem] font-bold tracking-widest pointer-events-none text-muted-foreground/20 sm:text-muted-foreground/30 dark:text-gray-500/20 sm:dark:text-gray-500/20 select-none whitespace-nowrap"
       >
         JOURNEY
       </h2>
@@ -35,7 +35,7 @@ export default function JourneyTimeline({
         animate={{ opacity: 1, y: 0 }}
         className="text-center mb-32 relative z-30"
       >
-        <h2 className="mt-0 sm:mt-0 text-4xl sm:text-5xl md:text-6xl font-bold">
+        <h2 className="-mt-6 sm:-mt-4 lg:-mt-6 text-4xl sm:text-5xl md:text-6xl font-bold">
           MY{" "}
           <span className="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
             {heading}
