@@ -60,7 +60,7 @@ export default function Skills() {
           animate={{ opacity: 1, y: 0 }}
           className="text-center mb-16"
         >
-          <h1 className="mt-4 sm:mt-10 md:mt-10 text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
+          <h1 className="mt-4 sm:mt-10 md:mt-8 text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
             TECH{" "}
             <span className="bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
               STACK
