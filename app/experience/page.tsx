@@ -43,11 +43,11 @@ const experienceData: JourneyItem[] = [
 
 const educationData: JourneyItem[] = [
   {
-    year: "2020",
-    title: "High School Graduate",
-    subtitle: "Jawahar Navodaya Vidyalaya",
+    year: "2026",
+    title: "Bachelor of Engineering",
+    subtitle: "Sahyadri College of Engineering and Management",
     description:
-      "Developed strong academic fundamentals while nurturing personal growth in a disciplined learning environment.",
+      "Specialized in computer science, software development and advanced programming concepts through academics and projects.",
     side: "left",
   },
   {
@@ -59,11 +59,11 @@ const educationData: JourneyItem[] = [
     side: "right",
   },
   {
-    year: "2026",
-    title: "Bachelor of Engineering",
-    subtitle: "Sahyadri College of Engineering and Management",
+    year: "2020",
+    title: "High School Graduate",
+    subtitle: "Jawahar Navodaya Vidyalaya",
     description:
-      "Specialized in computer science, software development and advanced programming concepts through academics and projects.",
+      "Developed strong academic fundamentals while nurturing personal growth in a disciplined learning environment.",
     side: "left",
   },
 ];
